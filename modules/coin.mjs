@@ -15,8 +15,10 @@
  */
 
 function coinFlip() {
-
+  return (Math.floor(Math.random() * 2) == 0) ? "heads" : "tails";
 }
+
+//console.log(coinFlip())
 
 /** Multiple coin flips
  * 
@@ -38,9 +40,13 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-
+  const output = [];
+  for (let i = 0; i < flips; i++) {
+    output.push(coinFlip())
+  }
+  return output;
 }
-
+console.log(coinFlips(5))
 /** Count multiple flips
  * 
  * Write a function that accepts an array consisting of "heads" or "tails" 
