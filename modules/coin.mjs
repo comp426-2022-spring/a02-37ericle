@@ -40,7 +40,7 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  const output = [];
+  var output = [];
   for (let i = 0; i < flips; i++) {
     output.push(coinFlip())
   }
@@ -100,7 +100,7 @@ function flipACoin(call) {
   let o = {call: call, flip: flip, result: result}
   return o;
 }
-console.log(flipACoin('tails'))
+//console.log(flipACoin('tails'))
 
 /** Export 
  * 

@@ -1,0 +1,27 @@
+{
+  "name": "coinflip",
+  "version": "0.0.1",
+  "description": "This is a simple package that emulates coin flips in several different ways.",
+  "main": "flip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flip": "node flip.js",
+    "flips": "node flips.js",
+    "guess-flip": "node guess-flip.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a02-37ericle.git"
+  },
+  "author": "Eric Le",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a02-37ericle/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a02-37ericle#readme",
+  "type": "module",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "module": "^1.2.5"
+  }
+}
