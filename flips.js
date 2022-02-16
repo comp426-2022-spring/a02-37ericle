@@ -5,7 +5,8 @@ const require = createRequire(import.meta.url);
 const args = require('minimist')(process.argv.slice(2));
 var output = [];
 if (args['number'] == null) {
-    output.push(coinFlip());
+    //output.push(coinFlip());
+    output = coinFlips(1);
 }
 else {
     output = coinFlips(args['number']);
