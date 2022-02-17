@@ -7,10 +7,9 @@ var output = [];
 if (args['number'] == null) {
     //output.push(coinFlip());
     output = coinFlips(1);
-    console.log(output);}
+}
 else {
     output = coinFlips(args['number']);
-    console.log(output);
-    console.log(countFlips(output));
 }
-
+console.log(output);
+console.log(countFlips(output));
