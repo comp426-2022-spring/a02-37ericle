@@ -64,6 +64,7 @@ function countFlips(array) {
   let countArray = [];
   let headsCount = 0;
   let tailsCount = 0;
+  var o = new Object();
   array.forEach(function(item) {
     if (item == "heads") {
       headsCount += 1;
@@ -72,7 +73,15 @@ function countFlips(array) {
       tailsCount += 1;
     }
   });
-  let o = {heads: headsCount, tails: tailsCount}
+  if (headsCount == 0) {
+    o = {tails: tailsCount}
+  }
+  else if (tailsCount == 0) {
+    o = {heads: headsCount}
+  }
+  else {
+    o = {heads: headsCount, tails: tailsCount}
+  }
   return o;
 }
 //console.log(countFlips(coinFlips(10)))
