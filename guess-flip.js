@@ -10,7 +10,7 @@ if (call == null){
     process.exit(0);
 }
 if (call != "tails" && call != "heads") {
-    console.error('Usage: node guess-flip --call=[heads|tails]')
+    console.error('Usage: node guess-flip --call=[ heads|tails ]')
     process.exit(0);
 }
 if (call == flip) {
